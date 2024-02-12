@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout 
+	    android:gravity="center_vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">   
+ 
+	    <ScrollView 
+	        android:scrollbarAlwaysDrawVerticalTrack="false"
+	        android:id="@+id/preview_dashboard_v" 
+	        android:background="#ffebebeb" 
+	        android:scrollbars="vertical" 
+	        android:fadingEdge="vertical"    
+	        android:layout_width="0.0dip"    
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0">
+	        	                
+            <LinearLayout 
+                android:orientation="vertical" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">       
+    
+			    <EditText
+			        android:id="@+id/txtText"
+			        android:layout_marginTop="2.0dip"
+			        android:layout_marginLeft="2.0dip"
+			        android:layout_marginRight="2.0dip"
+			        android:layout_width="fill_parent"
+			        android:layout_height="120sp"
+			        android:inputType="textMultiLine"
+			        android:background="@drawable/my_edittext"
+			        android:gravity="top"
+			        android:text="" />
+			     <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/activity_1dbarcodes_start_cd"	        
+			        android:textSize="20.0dip" />	
+			    <LinearLayout 
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal"
+			            >
+				<EditText
+			        android:id="@+id/txtformat_x"
+			        android:layout_width="50dp"	       
+			        android:layout_height="wrap_content"
+			        android:textColor="#000000"
+			        android:textSize="20sp"
+			        android:layout_weight="1"
+			        android:text="0"
+			        android:maxLines="1"/>
+				<EditText
+			        android:id="@+id/txtformat_y"
+			        android:layout_width="50dp"	       
+			        android:layout_height="wrap_content"
+			        android:textColor="#000000"
+			        android:textSize="20sp"
+			        android:layout_weight="1"
+			        android:text="0"
+			        android:maxLines="1"/>
+				</LinearLayout>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/activity_text_format_codepage"
+					android:textSize="20.0dip" />
+				<Spinner
+					android:id="@+id/spnformat_codepage"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textSize="20.0dip"/>
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/activity_text_format_font"	        
+			        android:textSize="20.0dip" />	
+				<Spinner
+			        android:id="@+id/spnformat_font" 
+			        android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:textSize="20.0dip"/>
+			   <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/activity_1dbarcodes_rotation"	        
+			        android:textSize="20.0dip" />	
+				<Spinner
+			        android:id="@+id/spnformat_rotation" 
+			        android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:textSize="20.0dip"/>
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/activity_text_format_x_multiplication"	        
+			        android:textSize="20.0dip" />                
+			    <Spinner
+			        android:id="@+id/spnformat_x_multiplication" 
+			        android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:textSize="20.0dip"/>
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/activity_text_format_chkbold"
+			        android:textSize="20.0dip" 
+			        />
+			    <Spinner
+			        android:id="@+id/spnformat_y_multiplication" 
+			        android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:textSize="20.0dip"
+					/>
+			   		    
+			    
+			    <Button
+			        android:id="@+id/btnPrint"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"	        
+			        android:onClick="onClickPrint"
+			        android:text="@string/activity_global_print" />
+    
+    	    </LinearLayout>
+	    </ScrollView>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,218 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sdk.tspl.demo"
+4    android:versionCode="23022801"
+5    android:versionName="TSPL_Demo_V1.24.01" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+12-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:6:5-82
+12-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:6:22-79
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:7:5-80
+13-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+14-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:8:5-74
+14-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:8:22-71
+15    <uses-permission android:name="android.permission.BLUETOOTH" />
+15-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:9:5-68
+15-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:9:22-65
+16    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+16-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:10:5-95
+16-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+17-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:11:5-92
+17-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:11:22-73
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:12:5-95
+18-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:12:22-76
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:13:5-92
+19-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:13:22-73
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:14:5-67
+20-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:14:22-64
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:15:5-68
+21-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:15:22-65
+22
+23    <uses-feature android:name="android.hardware.usb.host" />
+23-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:16:5-62
+23-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:16:19-59
+24
+25    <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+25-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:17:5-80
+25-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:17:16-78
+26
+27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+27-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:18:5-81
+27-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:18:22-78
+28    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+28-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:19:5-80
+28-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:19:22-77
+29    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+29-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:20:5-21:47
+29-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:20:22-81
+30
+31    <uses-feature android:name="android.hardware.camera" />
+31-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:22:5-62
+31-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:22:19-59
+32    <uses-feature android:name="android.hardware.camera.autofocus" />
+32-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:23:5-72
+32-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:23:19-69
+33
+34    <application
+34-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:24:5-74:19
+35        android:allowBackup="true"
+35-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:25:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.3.1] /Users/immad/.gradle/caches/transforms-3/0936edceddcb01b79e43d946e0ba42a0/transformed/core-1.3.1/AndroidManifest.xml:24:18-86
+37        android:debuggable="true"
+38        android:icon="@drawable/logo2"
+38-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:26:9-39
+39        android:label="@string/app_name"
+39-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:27:9-41
+40        android:requestLegacyExternalStorage="true"
+40-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:30:9-52
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:28:9-54
+42        android:supportsRtl="true"
+42-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:29:9-35
+43        android:theme="@style/AppTheme" >
+43-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:31:9-40
+44        <activity android:name="com.sdk.tspl.demo.Activity_Logo" >
+44-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:32:9-39:20
+44-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:33:13-42
+45            <intent-filter>
+45-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:35:13-38:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:36:17-69
+46-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:36:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:37:17-77
+48-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:37:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity
+51-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:40:9-42:25
+52            android:name="com.sdk.tspl.demo.Activity_Main"
+52-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:40:19-48
+53            android:label="@string/app_title" />
+53-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:41:13-46
+54        <activity android:name="com.sdk.tspl.demo.Activity_1DBarcodes" />
+54-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:43:9-66
+54-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:43:19-54
+55        <activity
+55-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:44:9-46:20
+56            android:name="com.sdk.tspl.demo.Activity_DeviceList"
+56-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:44:19-54
+57            android:theme="@android:style/Theme.Dialog" >
+57-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:45:13-56
+58        </activity>
+59        <activity android:name="com.sdk.tspl.demo.Activity_Image_Preview" />
+59-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:47:9-69
+59-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:47:19-57
+60        <activity
+60-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:48:9-50:20
+61            android:name="com.sdk.tspl.demo.Activity_Print_Image"
+61-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:48:19-55
+62            android:theme="@android:style/Theme.Dialog" >
+62-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:49:13-56
+63        </activity>
+64        <activity android:name="com.sdk.tspl.demo.Activity_PRNFile" />
+64-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:51:9-63
+64-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:51:19-51
+65        <activity android:name="com.sdk.tspl.demo.Activity_Image_File" />
+65-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:52:9-66
+65-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:52:19-54
+66        <activity android:name="com.sdk.tspl.demo.Activity_QRCode" />
+66-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:53:9-62
+66-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:53:19-50
+67        <activity android:name="com.sdk.tspl.demo.Activity_Setting" />
+67-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:55:9-63
+67-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:55:19-51
+68        <activity android:name="com.sdk.tspl.demo.Activity_TextFormat" />
+68-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:56:9-66
+68-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:56:19-54
+69        <activity
+69-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:57:9-59:20
+70            android:name="com.sdk.tspl.demo.Activity_Wifi"
+70-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:57:19-48
+71            android:theme="@android:style/Theme.Dialog" >
+71-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:58:13-56
+72        </activity>
+73        <activity android:name="com.sdk.tspl.demo.Activity_Image_Print" />
+73-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:60:9-67
+73-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:60:19-55
+74        <activity android:name="com.sdk.tspl.demo.BTActivity" />
+74-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:61:9-57
+74-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:61:19-45
+75        <activity
+75-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:62:9-64:20
+76            android:name="com.sdk.tspl.demo.Activity_Status"
+76-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:62:19-50
+77            android:theme="@android:style/Theme.Dialog" >
+77-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:63:13-56
+78        </activity>
+79
+80        <provider
+80-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:65:9-73:20
+81            android:name="androidx.core.content.FileProvider"
+81-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:66:13-62
+82            android:authorities="com.tspl.ZFileManagerProvider"
+82-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:67:13-64
+83            android:exported="false"
+83-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:68:13-37
+84            android:grantUriPermissions="true" >
+84-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:69:13-47
+85            <meta-data
+85-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:70:13-72:54
+86                android:name="android.support.FILE_PROVIDER_PATHS"
+86-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:71:17-67
+87                android:resource="@xml/file_paths" />
+87-->/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/src/main/AndroidManifest.xml:72:17-51
+88        </provider>
+89
+90        <activity
+90-->[com.leon:lfilepickerlibrary:1.7.0] /Users/immad/.gradle/caches/transforms-3/e7389b02f419068f088ee83b9328fb45/transformed/jetified-lfilepickerlibrary-1.7.0/AndroidManifest.xml:14:9-17:20
+91            android:name="com.leon.lfilepickerlibrary.ui.LFilePickerActivity"
+91-->[com.leon:lfilepickerlibrary:1.7.0] /Users/immad/.gradle/caches/transforms-3/e7389b02f419068f088ee83b9328fb45/transformed/jetified-lfilepickerlibrary-1.7.0/AndroidManifest.xml:15:13-78
+92            android:theme="@style/LibraryAppTheme" >
+92-->[com.leon:lfilepickerlibrary:1.7.0] /Users/immad/.gradle/caches/transforms-3/e7389b02f419068f088ee83b9328fb45/transformed/jetified-lfilepickerlibrary-1.7.0/AndroidManifest.xml:16:13-51
+93        </activity>
+94        <activity
+94-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:17:9-19:54
+95            android:name="com.zp.z_file.ui.ZFileQWActivity"
+95-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:18:13-60
+96            android:theme="@style/ZFile_BaseTheme" />
+96-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:19:13-51
+97        <activity
+97-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:20:9-22:54
+98            android:name="com.zp.z_file.ui.ZFileListActivity"
+98-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:21:13-62
+99            android:theme="@style/ZFile_BaseTheme" />
+99-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:22:13-51
+100        <activity
+100-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:23:9-25:54
+101            android:name="com.zp.z_file.ui.ZFilePicActivity"
+101-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:24:13-61
+102            android:theme="@style/ZFile_BaseTheme" />
+102-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:25:13-51
+103        <activity
+103-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:26:9-28:54
+104            android:name="com.zp.z_file.ui.ZFileVideoPlayActivity"
+104-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:27:13-67
+105            android:theme="@style/ZFile_BaseTheme" />
+105-->[com.github.zp:z_file:1.2.6] /Users/immad/.gradle/caches/transforms-3/a15a9e0a0e19103f7302d85d8c51e5ff/transformed/jetified-z_file-1.2.6/AndroidManifest.xml:28:13-51
+106    </application>
+107
+108</manifest>

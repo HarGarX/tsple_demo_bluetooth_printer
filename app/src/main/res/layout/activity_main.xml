@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+           
+    <LinearLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:orientation="horizontal">
+		
+	    <TextView
+	        android:id="@+id/itemName3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3.0dip"
+	        android:text="@string/activity_main_printer"	        
+	        android:textSize="20.0dip" />
+	    
+	    <Spinner
+	        android:id="@+id/spn_printer_list" 
+	        android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:textSize="20.0dip"/>	    
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="5dp">
+	
+	    <Button
+	        android:id="@+id/btnBT"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:onClick="onClickConnect"
+	        android:text="@string/activity_main_bt" />
+	                
+	    <Button
+	        android:id="@+id/btnWIFI"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:onClick="onClickConnect"
+	        android:text="@string/activity_main_wifi" />
+	    
+	    <Button
+	        android:id="@+id/btnUSB"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:onClick="onClickConnect"
+	        android:text="@string/activity_main_usb" />
+    </LinearLayout>
+            
+    <LinearLayout 
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+	    <TextView
+	        android:id="@+id/txtTips"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="3.0dip"
+	        android:text="@string/activity_main_tips"	  
+	        android:layout_weight="1.0"      
+	        android:textSize="16.0dip" />
+	            
+	    <Button
+	        android:id="@+id/btnClose"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2.0"
+	        android:onClick="onClickClose"
+	        android:text="@string/activity_main_close" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+	
+	    <Button
+	        android:id="@+id/btnSetting"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:onClick="onClickbtnSetting"
+	        android:visibility="gone"
+	        android:text="@string/activity_main_setting" />
+
+	    <Button
+	        android:id="@+id/btnPrintTestPage"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:onClick="onClickDo"
+	        android:text="@string/activity_main_print_test_page" />	    
+    </LinearLayout>
+    
+
+    <include layout="@layout/activity_esc_function"/>
+    	  
+</LinearLayout>

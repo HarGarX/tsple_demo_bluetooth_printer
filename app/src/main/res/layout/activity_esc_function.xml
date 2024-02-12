@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+   
+	<LinearLayout 
+	    android:gravity="center_vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">   
+ 
+	    <ScrollView 
+	        android:scrollbarAlwaysDrawVerticalTrack="false"
+	        android:id="@+id/preview_dashboard_v" 
+	        android:background="#ffebebeb" 
+	        android:scrollbars="vertical" 
+	        android:fadingEdge="vertical"    
+	        android:layout_width="0.0dip"    
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1.0">
+	        	                
+            <LinearLayout 
+                android:orientation="vertical" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">                	            
+	            <Button
+			        android:id="@+id/btnGetStatus"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"		
+			        android:visibility="gone"						        
+			        android:text="@string/activity_esc_function_btngetprinterstatus" />
+	            
+	            <Button
+			        android:id="@+id/btnOpenCashDrawer"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+					android:visibility="gone"
+			        android:text="@string/activity_esc_function_btnopencashdrawer" />
+	           	            
+	            <Button
+			        android:id="@+id/btnSampleReceipt"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"	
+			        android:onClick="onClickDo"		        
+			        android:text="@string/activity_esc_function_btnsamplereceipt" />
+	            
+	            <Button
+			        android:id="@+id/btn1DBarcodes"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+			        android:text="@string/activity_esc_function_btn1dbarcodes" />
+	            
+	            <Button
+			        android:id="@+id/btnQRCode"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+			        android:text="@string/activity_esc_function_btnqrcode" />
+	            
+	            <Button
+			        android:id="@+id/btnPDF417"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:visibility="gone"
+			        android:text="@string/activity_esc_function_btnpdf417" />
+	            
+	            <Button
+			        android:id="@+id/btnCut"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+					android:visibility="gone"
+			        android:text="@string/activity_esc_function_btncut" />
+	            
+	            <Button
+			        android:id="@+id/btnTextFormat"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+			        android:text="@string/activity_esc_function_btntextformatting" />
+	            
+	            <Button
+			        android:id="@+id/btnPrintImageFile"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+			        android:text="@string/activity_esc_function_btnprintimagefile" />
+	            <Button
+			        android:id="@+id/btnPrintStatus"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+			        android:text="@string/activity_esc_function_btnprintstatus" />
+
+	            <Button
+			        android:id="@+id/btnPrintPDF417"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+			        android:text="@string/activity_esc_function_btnprintpdf417" />
+
+	            <Button
+			        android:id="@+id/btnPageMode"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+			        android:visibility="gone"
+			        android:text="@string/activity_esc_function_btnpagemode" />
+	            
+	            <Button
+			        android:id="@+id/btnImageManage"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:onClick="onClickDo"
+			        android:visibility="gone"
+			        android:text="@string/activity_esc_function_btnimagemanage" />
+	            
+	            <Button
+			        android:id="@+id/btnPrintBlock"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+					android:onClick="onClickDo"
+			        android:text="@string/activity_esc_function_btnprintblock" />
+				<Button
+					android:id="@+id/btn_print_pdf"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/activity_esc_function_btnprintpdf"
+					android:onClick="onClickDo"
+					/>
+			</LinearLayout>
+	    </ScrollView>
+	</LinearLayout>
+</LinearLayout>
