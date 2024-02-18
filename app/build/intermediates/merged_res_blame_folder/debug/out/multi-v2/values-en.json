@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/immad/Downloads/Android_TSPL_V1.24.01/AndroidTSPLDemo/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
+            "outputFile": "/Users/hargar/projects/IRSS/tsple_demo_bluetooth_printer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
             "map": [
                 {
-                    "source": "/Users/immad/.gradle/caches/transforms-3/bdbf4660f884fdb36817791ac3aa18f3/transformed/jetified-BaseRecyclerViewAdapterHelper-2.9.47/res/values-en/values-en.xml",
+                    "source": "/Users/hargar/.gradle/caches/transforms-3/3a02ac97219d3a734272136c9c09cec7/transformed/jetified-BaseRecyclerViewAdapterHelper-2.9.47/res/values-en/values-en.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

@@ -349,7 +349,7 @@ public class Activity_Main extends Activity {
             public void run() {
                 super.run();
                 try {
-                    List<Bitmap> bitmaps = Utility.pdfToBitmap(thisCon, file, "1", 576);
+                    List<Bitmap> bitmaps = Utility.pdfToBitmap(thisCon, file, "1-5", 576);
                     if (bitmaps == null || bitmaps.size() == 0 || bitmaps.get(0) == null) {
                         handler.sendEmptyMessage(0);
                         return;
