@@ -77,7 +77,7 @@
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="2.0"
-	        android:onClick="onClickClose"
+	        android:onClick="onClickbtnSetting"
 	        android:text="@string/activity_main_close" />
     </LinearLayout>
     

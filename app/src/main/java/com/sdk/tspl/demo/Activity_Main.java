@@ -177,10 +177,16 @@ public class Activity_Main extends Activity {
     }
 
     private void InitSetting() {
+        Log.d("Main Activity", "InitSetting(): ");
+
         String SettingValue = "";
+        PFun.WriteSharedPreferencesData("Codepage", "0,ISO–8859–6(Arabic)");
         SettingValue = PFun.ReadSharedPreferencesData("Codepage");
+        Log.d("Main Activity", "InitSetting() => : SettingValue" + (SettingValue));
+
         if (SettingValue.equals(""))
-            PFun.WriteSharedPreferencesData("Codepage", "0,PC437(USA:Standard Europe)");
+            PFun.WriteSharedPreferencesData("Codepage", "0,ISO–8859–6(Arabic)");
+//          PFun.WriteSharedPreferencesData("Codepage", "0,PC437(USA:Standard Europe)");
 
         SettingValue = PFun.ReadSharedPreferencesData("Cut");
         if (SettingValue.equals(""))
@@ -197,6 +203,12 @@ public class Activity_Main extends Activity {
         SettingValue = PFun.ReadSharedPreferencesData("Feeds");
         if (SettingValue.equals(""))
             PFun.WriteSharedPreferencesData("Feeds", "0");
+
+
+        Log.d("Main Activity", "InitSetting() => : SettingValue 2" + (HPRTPrinterHelper.LanguageEncode));
+//        Log.d("Main Activity", "InitSetting() => : SettingValue 2" + (HPRTPrinterHelper.Codepage()));
+
+
     }
 
 
@@ -349,7 +361,7 @@ public class Activity_Main extends Activity {
             public void run() {
                 super.run();
                 try {
-                    List<Bitmap> bitmaps = Utility.pdfToBitmap(thisCon, file, "1", 576);
+                    List<Bitmap> bitmaps = Utility.pdfToBitmap(thisCon, file, "1-5", 576);
                     if (bitmaps == null || bitmaps.size() == 0 || bitmaps.get(0) == null) {
                         handler.sendEmptyMessage(0);
                         return;
@@ -519,10 +531,10 @@ public class Activity_Main extends Activity {
     public void onClickDo(View view) {
         if (!checkClick.isClickEvent()) return;
 
-        if (!HPRTPrinterHelper.IsOpened()) {
-            Toast.makeText(thisCon, thisCon.getText(R.string.activity_main_tips), Toast.LENGTH_SHORT).show();
-            return;
-        }
+//        if (!HPRTPrinterHelper.IsOpened()) {
+//            Toast.makeText(thisCon, thisCon.getText(R.string.activity_main_tips), Toast.LENGTH_SHORT).show();
+//            return;
+//        }
         if (view.getId() == R.id.btnGetStatus) {
             Intent myIntent = new Intent(this, Activity_Status.class);
             myIntent.putExtra("StatusMode", PrinterProperty.StatusMode);

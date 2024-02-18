@@ -85,7 +85,7 @@ public class Activity_Setting  extends Activity
 		SettingValue=PFun.ReadSharedPreferencesData("Codepage");
 		if(SettingValue.equals(""))		
 		{
-			PFun.WriteSharedPreferencesData("Codepage", "0,PC437(USA:Standard Europe)");
+			PFun.WriteSharedPreferencesData("Codepage", "0,iso-8859–6(Arabic)");
 			SettingValue="0";
 		}
 		spnCodepage.setSelection(Integer.parseInt(SettingValue.split(",")[0]));
@@ -128,7 +128,9 @@ public class Activity_Setting  extends Activity
 		@Override
 		public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,long arg3) 
 		{			
-			String sCodepage=arrCodepage.getItem(arg2).toString();			
+			String sCodepage=arrCodepage.getItem(arg2).toString();
+			Log.e("onItemSelected", "Codepage: SELECTED CODE PAGE INDEX"+","+arg2);
+			Log.e("onItemSelected", "Codepage: SELECTED CODE PAGE"+","+sCodepage);
 			PFun.WriteSharedPreferencesData("Codepage", String.valueOf(arg2)+","+sCodepage);
 			String languageEncode = pAct.LanguageEncode();
 			Log.e("TAG", "languageEncode:"+languageEncode);

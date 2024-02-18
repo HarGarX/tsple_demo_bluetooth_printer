@@ -73,6 +73,9 @@ public class PublicAction
 		{
 			PublicFunction PFun=new PublicFunction(context);
 			String sLanguage=PFun.ReadSharedPreferencesData("Codepage").split(",")[1].toString();
+			Log.e("onItemSelected", "GET LANGUAGE ENCODE LANGUAGE =>"+sLanguage);
+			Log.e("onItemSelected", "CGET LANGUAGE ENCODE LANGUAGE FROM SHARED PREFRENCE =>"+PFun.ReadSharedPreferencesData("Codepage"));
+
 			String sLEncode="gb2312";
 			int intLanguageNum=0;
 			

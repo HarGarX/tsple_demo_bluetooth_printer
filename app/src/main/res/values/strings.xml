@@ -29,10 +29,11 @@
     <string name="activity_main_connecterr">Connect Error!</string>
     <string name="activity_main_connected">Connect Success!</string>
     <string name="activity_main_disconnected">Print Disconnect!</string>
+
     <string name="activity_main_print_image_model">Print Model</string>
 
     <string name="activity_main_connect_usb_printer">Please connect usb printer.</string>
-    <string name="activity_main_close">Close</string>
+    <string name="activity_main_close">Setting </string>
     <string name="activity_main_originalsize">OriginalSize:</string>
     <string name="activity_main_minifront">MiniFront:</string>
     <string name="activity_main_heightsize">HeightSize:</string>
@@ -354,7 +355,7 @@
         <item>"PC865(Nordic)"</item>
         <item>"PC857(Turkish)"</item>
         <item>"PC737(Greek)"</item>
-        <item>"ISO8859-7(Greek)"</item>
+        <item>"ISO8859–7(Greek)"</item>
         <item>"WPC1252"</item>
         <item>"PC866(Cyrillic #2)"</item>
         <item>"PC852(Latin 2)"</item>
@@ -386,7 +387,7 @@
         <item>"ISO-8859-3(Latin 3)"</item>
         <item>"ISO-8859-4(Baltic)"</item>
         <item>"ISO-8859-5(Cyrillic)"</item>
-        <item>"ISO-8859-6(Arabic)"</item>
+        <item>"ISO–8859–6(Arabic)"</item>
         <item>"ISO-8859-8(Hebrew)"</item>
         <item>"ISO-8859-9(Turkish)"</item>
         <item>"PC856"</item>
@@ -541,7 +542,7 @@
         <item>HD100</item>
     </string-array>
     <string-array name="codepage_list">
-        <item>"Default"</item>
+        <item>"Latin I"</item>
         <item>"Chinese Simplified"</item>
         <item>"USA"</item>
         <item>"British"</item>
