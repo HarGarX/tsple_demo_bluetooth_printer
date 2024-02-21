@@ -83,9 +83,12 @@ public class Activity_Setting  extends Activity
 	{
 		String SettingValue="";
 		SettingValue=PFun.ReadSharedPreferencesData("Codepage");
-		if(SettingValue.equals(""))		
+		Log.e("TAG 333", "From shared pref Value of Code Page:"+SettingValue);
+
+		if(!SettingValue.equals(""))
 		{
-			PFun.WriteSharedPreferencesData("Codepage", "0,iso-8859–6(Arabic)");
+			PFun.WriteSharedPreferencesData("Codepage", "36,Iran");
+			Log.e("TAG 444", "From shared pref Value of Code Page:"+PFun.ReadSharedPreferencesData("Codepage"));
 			SettingValue="0";
 		}
 		spnCodepage.setSelection(Integer.parseInt(SettingValue.split(",")[0]));
@@ -128,12 +131,12 @@ public class Activity_Setting  extends Activity
 		@Override
 		public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2,long arg3) 
 		{			
-			String sCodepage=arrCodepage.getItem(arg2).toString();
-			Log.e("onItemSelected", "Codepage: SELECTED CODE PAGE INDEX"+","+arg2);
-			Log.e("onItemSelected", "Codepage: SELECTED CODE PAGE"+","+sCodepage);
+			String sCodepage=arrCodepage.getItem(arg2).toString();			
 			PFun.WriteSharedPreferencesData("Codepage", String.valueOf(arg2)+","+sCodepage);
 			String languageEncode = pAct.LanguageEncode();
 			Log.e("TAG", "languageEncode:"+languageEncode);
+			Log.e("TAG", "arrr index:"+arg2);
+
 		}
 		@Override
 		public void onNothingSelected(AdapterView<?> arg0) 

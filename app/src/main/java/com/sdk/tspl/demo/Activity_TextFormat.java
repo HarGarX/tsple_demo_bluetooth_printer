@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.nio.charset.StandardCharsets;
+
 import tspl.HPRTPrinterHelper;
 import tspl.PublicFunction;
 
@@ -38,7 +40,7 @@ public class Activity_TextFormat  extends Activity
 	private int x_multiplication=1;
 	private String y_multiplication="0";
 	private int qrcoderotation=0;
-	private String codepage="Latin I";
+	private String codepage="Default";
 	private String[] mList ;
 	private int bold=0;
 	
@@ -92,12 +94,11 @@ public class Activity_TextFormat  extends Activity
 
 		@Override
 		public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-			Log.d("TextFormat", "Activity TextFormat  onItemSelected: "+(codepage));
-			Log.d("TextFormat", "Activity TextFormat  onItemSelected: "+(mList[position]));
-			Log.d("TextFormat", "Activity TextFormat  onItemSelected: "+(codepage));
-
-
 			codepage=mList[position];
+			Log.e("TAG 111", "OnItemSelectedCodePage:"+mList[position]);
+			Log.e("TAG 222", "OnItemSelectedCodePage Value of Code Page:"+codepage);
+
+
 		}
 
 		@Override
@@ -194,34 +195,16 @@ public class Activity_TextFormat  extends Activity
 	    		return;
 	    	}
 			sText = sText.replace("\n", "\r\n");
-			Log.d("Printer", "sText 2: "+ HPRTPrinterHelper.LanguageEncode);
-			Toast.makeText(thisCon,sText,Toast.LENGTH_LONG).show();
-			Toast.makeText(thisCon, HPRTPrinterHelper.LanguageEncode,Toast.LENGTH_LONG).show();
-
-//			if(HPRTPrinterHelper.printAreaSize("100", "30")==-1){
-//				Toast.makeText(thisCon,getString(R.string.activity_main_disconnected),Toast.LENGTH_LONG).show();
-//				return;
-//			}
-
+			Log.d("Printer", "sText: "+(HPRTPrinterHelper.bytetohex(sText.getBytes(StandardCharsets.UTF_8))));
+			if(HPRTPrinterHelper.printAreaSize("100", "30")==-1){
+				Toast.makeText(thisCon,getString(R.string.activity_main_disconnected),Toast.LENGTH_LONG).show();
+				return;
+			}
 			HPRTPrinterHelper.CLS();
 			if (bold!=0){
 				HPRTPrinterHelper.Bold(bold);
 			}
-			Log.d("Printer", "1111 : "+ txtformat_x.getText().toString());
-			Log.d("Printer", "2222 : "+ 					txtformat_y.getText().toString());
-			Log.d("Printer", "3333 : "+ 					formatfont);
-			Log.d("Printer", "4444 : "+ 					""+qrcoderotation);
-			Log.d("Printer", "5555 : "+ 					x_multiplication);
-			Log.d("Printer", "6666 : "+ 					sText);
-
-
-			HPRTPrinterHelper.printText(
-					txtformat_x.getText().toString(),
-					txtformat_y.getText().toString(),
-					formatfont,
-					""+qrcoderotation,
-					x_multiplication,
-					sText);
+	    	HPRTPrinterHelper.printText(txtformat_x.getText().toString(), txtformat_y.getText().toString(), formatfont, ""+qrcoderotation, x_multiplication, sText);
 			if (bold!=0){
 				HPRTPrinterHelper.Bold(0);
 			}

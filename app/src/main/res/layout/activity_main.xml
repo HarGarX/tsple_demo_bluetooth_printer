@@ -77,8 +77,8 @@
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
 	        android:layout_weight="2.0"
-	        android:onClick="onClickbtnSetting"
-	        android:text="@string/activity_main_close" />
+	        android:onClick="onClickClose"
+			android:text="@string/activity_main_close" />
     </LinearLayout>
     
     <LinearLayout 
@@ -92,7 +92,7 @@
 	        android:layout_height="wrap_content"
 	        android:layout_weight="1.0"
 	        android:onClick="onClickbtnSetting"
-	        android:visibility="gone"
+	        android:visibility="visible"
 	        android:text="@string/activity_main_setting" />
 
 	    <Button

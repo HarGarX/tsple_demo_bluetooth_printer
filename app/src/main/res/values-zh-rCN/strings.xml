@@ -543,7 +543,6 @@
         <item>HD100</item>
     </string-array>
     <string-array name="codepage_list">
-        <item>"Latin I"</item>
         <item>"Default"</item>
         <item>"Chinese Simplified"</item>
         <item>"USA"</item>
